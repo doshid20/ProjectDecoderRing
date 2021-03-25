@@ -65,5 +65,13 @@ describe("polybius", () => {
     const actual = polybius(input, false);
     expect(actual).to.false;
     });
+    
+    it("should return encoded string with i and j", () => {
+    
+    const input = "Hi J";
+    const expected = "3242 42";
+    const actual = polybius(input);
+    expect(actual).to.equal(expected);
+    });
   
 });
