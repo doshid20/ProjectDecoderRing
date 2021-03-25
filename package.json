@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This project allows you to encode and decode text with a variety of different ciphers.",
   "scripts": {
-    "test": "mocha test",
+    "test": "mocha tests",
     "start": "live-server"
   },
   "keywords": [],
