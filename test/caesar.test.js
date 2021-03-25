@@ -61,11 +61,22 @@ describe("caesar", () => {
 });
 
 describe("caesar", () => {
-  it("should return encoded string when string is is lowercase", () => {
+  it("should return decoded string when string is lowercase", () => {
       
       const input = "ebiiltloia";
       const shift = 3;
       const expected = "helloworld";
+      const actual = caesar(input, shift);
+      expect(actual).to.equal(expected);
+      });
+});
+
+describe("caesar", () => {
+  it("should return decoded string with space", () => {
+      
+      const input = "ebiil tloia";
+      const shift = 3;
+      const expected = "hello world";
       const actual = caesar(input, shift);
       expect(actual).to.equal(expected);
       });
@@ -151,6 +162,17 @@ describe("caesar", () => {
       const encode = true;
       const expected = "bpqa qa i amkzmb umaaiom!";
       const actual = caesar(input, shift, true);
+      expect(actual).to.equal(expected);
+      });
+});
+
+describe("caesar", () => {
+  it("should return string that go past end of the alphabet", () => {
+      
+      const input = "Zebra Magazine";
+      const shift = 3;
+      const expected = "cheud pdjdclqh";
+      const actual = caesar(input, shift);
       expect(actual).to.equal(expected);
       });
 });
