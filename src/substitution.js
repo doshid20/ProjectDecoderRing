@@ -34,23 +34,28 @@ const substitutionModule = (function () {
       }
     }
 
+    // return false when alphabet is not present
     if (!alphabet || !input) {
       return false;
     }
 
+    // return false when alphabet is greater than or less than 26
     if (alphabet.length != 26) {
       return false;
     }
 
+    // return false when alphabet is not unique
     if (!isCharactersInSubstitionAlphabetUnique(alphabet)) {
       return false;
     }
 
+    // mapping real alphabet to substitute aplha
     const encodeAlphaMapping = [...realAplhabet].reduce((alpha, char, index)=>{
         alpha[char] = alphabet[index];
         return alpha;
       },{})
 
+    // mapping  substitute aplha to real alphabet
     const decodeAlphaMapping = [...alphabet].reduce((alpha, char, index)=> {
       alpha[char] = realAplhabet[index];
       return alpha;
