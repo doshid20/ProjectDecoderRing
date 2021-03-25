@@ -9,7 +9,6 @@
 - Polybius square 
 - Substitution cipher 
 
+## Image
 
-- caesar.test.js
-- polybius.test.js
-- substitution.test.js
+![Image](https://github.com/doshid20/ProjectDecoderRing/blob/main/ProjectDecodedRing.png)
