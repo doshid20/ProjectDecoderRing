@@ -1,7 +1,8 @@
 # ProjectDecoderRing
 
 ---
-## Project : https://doshid20.github.io/ProjectDecoderRing/
+## Project : [ProjectDecoderRing](https://doshid20.github.io/ProjectDecoderRing/).
+
 
 ## Project Rubric
 
