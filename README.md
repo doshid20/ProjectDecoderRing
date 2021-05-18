@@ -9,7 +9,11 @@
 - Polybius square 
 - Substitution cipher 
 
-Project build with JavaScript and Mocha Chai as testing framework
+## Technology
+   ### Built with:
+
+  - JavaScript
+  - Mocha Chai as testing framework
 
 ## Image
 
